@@ -37,11 +37,11 @@ namespace CPW211_UnitTestStarterCode
             // throw ArgumentException
             if (a == 0 || b == 0) 
             {
-                throw new ArgumentException($"You cannot divide with a zero");
+                throw new ArgumentException("Denominator cannot be zero");
             }
             else
             {
-                double sum = a * b;
+                double sum = a / b;
                 return sum;
             }
         }
