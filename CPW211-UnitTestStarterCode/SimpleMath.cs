@@ -15,22 +15,35 @@ namespace CPW211_UnitTestStarterCode
     {
         public static double Add(double a, double b)
         {
-            throw new NotImplementedException();
+            double sum = a + b;
+            return sum;
         }
 
         public static double Subtract(double a, double b)
         {
-            throw new NotImplementedException();
+            double sum = a - b;
+            return sum;
         }
 
         public static double Multiply(double a, double b)
         {
-            throw new NotImplementedException();
+            double sum = a * b;
+            return sum;
         }
 
         public static double Divide(double a, double b)
         {
-            throw new NotImplementedException();
+            // If "a" or "b" has a value of 0
+            // throw ArgumentException
+            if (a == 0 || b == 0) 
+            {
+                throw new ArgumentException($"You cannot divide with a zero");
+            }
+            else
+            {
+                double sum = a * b;
+                return sum;
+            }
         }
     }
 }
